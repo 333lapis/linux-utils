@@ -2,10 +2,7 @@
 
 # wip
 
-paru -S go sway sway-contrib swappy
+paru -S go sway sway-contrib swappy swaybg 
 
-cd ./playerctl-monitor
-sudo go build -o /usr/bin/playerctl-monitor main.go
-
-cd ..
+sh ./monitor/build.sh
 cp ./sway/config ~/.config/sway/config
